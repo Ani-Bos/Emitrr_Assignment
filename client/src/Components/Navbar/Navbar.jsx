@@ -51,6 +51,9 @@ const Navbar = () => {
                   <li className="p-2 text-gray-800 h-10 hover:text-dark-blue-s hover:font-bold">
                     <Link to="/signup">Performance</Link>
                   </li>
+                  <li className="p-2 text-gray-800 h-10 hover:text-dark-blue-s hover:font-bold">
+                    <Link to="/signup">Leaderboard</Link>
+                  </li>
                   <li className="p-2 space-x-8 text-gray-800  h-10 hover:text-dark-blue-s hover:font-bold">
                     <Link to="/signup">Upload Question</Link>
                   </li>
@@ -66,13 +69,16 @@ const Navbar = () => {
               ) : (
                 <>
                   <li className="p-2 space-x-8 text-gray-800 h-10  rounded-md hover:text-dark-blue-s hover:font-bold">
-                    <Link to="/">Test</Link>
+                    <Link to="/Test">Test</Link>
                   </li>
                   <li className="p-2 text-gray-800 h-10 hover:text-dark-blue-s hover:font-bold">
-                    <Link to="/">Performance</Link>
+                    <Link to="/performance">Performance</Link>
+                  </li>
+                  <li className="p-2 text-gray-800 h-10 hover:text-dark-blue-s hover:font-bold">
+                    <Link to="/leaderboard">Leaderboard</Link>
                   </li>
                   <li className="p-2 space-x-8 text-gray-800  h-10 hover:text-dark-blue-s hover:font-bold">
-                    <Link to="/">Upload Question</Link>
+                    <Link to="/upload">Upload Question</Link>
                   </li>
                   <li>
                     <Link to="/dashboard">

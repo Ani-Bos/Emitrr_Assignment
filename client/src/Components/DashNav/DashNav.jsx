@@ -82,13 +82,16 @@ const DashNav = () => {
               >
                 <ul className="items-center justify-center space-y-8 mb-3 md:flex md:space-x-6 md:space-y-0 ">
                   <li className="p-2 space-x-8 text-gray-800 h-10  rounded-md hover:text-dark-blue-s hover:font-bold">
-                    <Link to="/">Test</Link>
+                    <Link to="/test">Test</Link>
                   </li>
                   <li className="p-2 text-gray-800 h-10 hover:text-dark-blue-s hover:font-bold">
-                    <Link to="/">Performance</Link>
+                    <Link to="/performance">Performance</Link>
+                  </li>
+                  <li className="p-2 text-gray-800 h-10 hover:text-dark-blue-s hover:font-bold">
+                    <Link to="/leaderboard">Leaderboard</Link>
                   </li>
                   <li className="p-2 space-x-8 text-gray-800  h-10 hover:text-dark-blue-s hover:font-bold">
-                    <Link to="/">Upload Question</Link>
+                    <Link to="/upload">Upload Question</Link>
                   </li>
                   <li>{/* bg-[#002A8E] */}</li>
                   <li className="p-2 space-x-8">

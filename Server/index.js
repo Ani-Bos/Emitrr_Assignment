@@ -6,6 +6,7 @@ import http from "http";
 import bodyParser from "body-parser";
 import filter from "./Middleware/Middleware.js";
 import user from "./Routes/Auth.js";
+import question from "./Routes/Question.js"
 import mongoose from "mongoose";
 dotenv.config();
 const PORT = process.env.PORT || 5000;
@@ -26,6 +27,7 @@ mongoose
   });
 
 app.use("/api/auth", user);
+app.use("/api/question", question);
 app.get("/", (req, res) => {
   res.send("hello");
 });
