@@ -2,7 +2,7 @@ import User from "../Model/User.js";
 import express from "express";
 const router = express.Router();
 import jwt from "jsonwebtoken";
-const SECRET_KEY = "Lingo";
+const SECRET_KEY = process.env.JWT_SECRET;;
 import filter from "../Middleware/Middleware.js";
 import Rank from "../Model/Ranks.js";
 router.post("/getscore", filter, async (req, res) => {

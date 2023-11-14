@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-const url = "mongodb://localhost:27017/mt45";
+
+const url = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@cluster0.jzadva4.mongodb.net/?retryWrites=true&w=majority`;
 
 const mongoconnect = async () => {
   try {

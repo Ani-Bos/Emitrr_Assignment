@@ -11,8 +11,7 @@ import score from "./Routes/Score.js"
 import mongoose from "mongoose";
 dotenv.config();
 const PORT = process.env.PORT || 5000;
-// const dburl = "mongodb://localhost:27017/45";
-const dburl = "mongodb://localhost:27017/Emitrr";
+const dburl = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@cluster0.jzadva4.mongodb.net/?retryWrites=true&w=majority`;
 const app = express();
 app.use(cors());
 app.use(express.json());

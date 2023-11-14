@@ -1,7 +1,7 @@
 import Question from "../Model/Question.js";
 import express from "express";
 const router = express.Router();
-const SECRET_KEY = "Lingo";
+const SECRET_KEY = process.env.JWT_SECRET;;
 import filter from "../Middleware/Middleware.js";
 router.post("/addQuestion", async (req, res) => {
   console.log("went into adding new question");
