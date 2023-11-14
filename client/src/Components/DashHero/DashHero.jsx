@@ -22,7 +22,7 @@ const DashHero = () => {
     console.log(data);
       console.log("email" + data.email);
       let x = data.email.split("@");
-    setName(x[0]);
+    setName(data.name);
     console.log(name);
   };
 

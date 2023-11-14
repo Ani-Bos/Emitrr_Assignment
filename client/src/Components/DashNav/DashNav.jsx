@@ -23,7 +23,7 @@ const DashNav = () => {
       console.log(data);
       console.log("email" + data.email)
       const ee = data.email
-      setName(ee[0]);
+      setName(data.name);
       console.log(name)
   };
 

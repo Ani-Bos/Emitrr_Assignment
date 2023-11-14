@@ -23,16 +23,6 @@ router.post("/addQuestion", async (req, res) => {
   }
 });
 
-// router.get("/getallQuestions", async (req, res) => {
-//   try {
-//     const all = await Question.find();
-//     res.json({ data: all });
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).send("Internal Server Error");
-//   }
-// });
-
 router.get("/getallQuestions", async (req, res) => {
   try {
     console.log("enter into get all questions")
