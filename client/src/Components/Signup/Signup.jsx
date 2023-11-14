@@ -5,13 +5,18 @@ import Cookies from "js-cookie";
 
 const SignUp = ({props}) => {
   let navigate = useNavigate();
-  const [credential, setCredential] = useState({ email: "", password: "" });
+  const [credential, setCredential] = useState({
+    email: "",
+    password: "",
+    name:"",
+  });
   const [error, setError] = useState(null);
   const handleSignUp = async () => {
     try {
      const url = "http://localhost:5000/api/auth";
      const resp = await axios.post(`${url}/createUser`, {
        email: credential.email,
+       name:credential.name,
      });
      const res = resp.data;
      Cookies.set("auth-Tokensynex", res.authToken);

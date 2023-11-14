@@ -3,7 +3,7 @@ import DashNav from "../DashNav/DashNav";
 import { Link } from "react-router-dom";
 
 const Test = () => {
-  const [typo, setTypo] = useState({ language: "", category: "" });
+  const [typo, setTypo] = useState({ language: "English", category: "Easy" });
 
   const handleLanguageChange = (event) => {
     setTypo({ ...typo, language: event.target.value });

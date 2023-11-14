@@ -145,17 +145,7 @@ const DashNav = () => {
                                 Log out
                               </button>
                             </li>
-                            <li>
-                              <button
-                                onClick={() => {
-                                  navigate("/");
-                                }}
-                                className="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:text-white dark:hover:bg-white dark:hover:text-black"
-                                role="menuitem"
-                              >
-                                Reset History
-                              </button>
-                            </li>
+                            
                           </ul>
                         </div>
                       )}

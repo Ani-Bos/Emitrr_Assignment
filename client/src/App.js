@@ -12,6 +12,8 @@ import Upload from "./Components/Upload/Upload";
 import Test from "./Components/Test/Test";
 import Problems from "./Components/Problems/Problems";
 import Leaderboard from "./Components/Leaderboard/Leaderboard";
+import Performance from "./Components/Performance/Performance";
+import Successful from "./Components/Problems/Successful";
 function App() {
   return (
     <Router>
@@ -24,6 +26,8 @@ function App() {
         <Route exact path="/test" element={<Test />} />
         <Route exact path="/problems" element={<Problems />} />
         <Route exact path="/leaderboard" element={<Leaderboard />} />
+        <Route exact path="/performance" element={<Performance />} />
+        <Route exact path="/successful" element={<Successful />} />
       </Routes>
     </Router>
   );

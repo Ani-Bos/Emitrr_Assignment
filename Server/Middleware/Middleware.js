@@ -3,6 +3,7 @@ const JWT_SECRET = "Lingo";
 
 const filter = (req, res, next) => {
   const token = req.headers["auth-token"];
+  console.log(token)
   if (!token) {
     return res
       .status(401)

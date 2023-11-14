@@ -8,7 +8,7 @@ router.post("/createUser", async (req, res) => {
   console.log(`email : ${req.body.email}`);
   let user = null;
   try {
-    user = await User.findOne({ email: req.body.email });
+    user = await User.findOne({ email: req.body.email});
     console.log(`user find done`);
     if (user !== null) {
       return res.json({
@@ -70,6 +70,16 @@ router.post("/getuser", filter, async (req, res) => {
     res.status(500).send("Internal Server Error Occured");
   }
 });
+router.get('/getalluser', async (req, res) => {
+  try {
+    const user = await User.find();
+    res.send(user)
+    
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Internal server error")
+  }
+})
 router.delete("/deleteuser", filter, async (req, res) => {
   try {
     let user = await User.findById(req.user.id);

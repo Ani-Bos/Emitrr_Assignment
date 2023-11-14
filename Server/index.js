@@ -7,10 +7,12 @@ import bodyParser from "body-parser";
 import filter from "./Middleware/Middleware.js";
 import user from "./Routes/Auth.js";
 import question from "./Routes/Question.js"
+import score from "./Routes/Score.js"
 import mongoose from "mongoose";
 dotenv.config();
 const PORT = process.env.PORT || 5000;
-const dburl = "mongodb://localhost:27017/mt45";
+// const dburl = "mongodb://localhost:27017/45";
+const dburl = "mongodb://localhost:27017/Emitrr";
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -28,6 +30,7 @@ mongoose
 
 app.use("/api/auth", user);
 app.use("/api/question", question);
+app.use("/api/score",score)
 app.get("/", (req, res) => {
   res.send("hello");
 });
