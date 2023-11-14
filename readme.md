@@ -39,7 +39,7 @@ Must be Node JS installed on your device.
 9. Run ➡️ `cd client`
 10. Run ➡️ `npm start`
     - The frontend will run on ➡️ PORT(3000)
-11. Please upload questions I have created API for uploading as lot of languages and category are there I have used some dummy questions.
+11. Please upload questions I have created API for uploading as lot of languages and category are there I have used some dummy questions for testing purpose only.
 12. Open http://localhost:3000 in your browser; you will see that the website is live in your system 🎉.
 
 
